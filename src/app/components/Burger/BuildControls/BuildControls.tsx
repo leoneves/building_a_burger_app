@@ -15,10 +15,14 @@ const controls: ControlType[] = [
   { label: 'Meat', type: 'meat' },
 ];
 
-const BuildControls: FunctionComponent = (): JSX.Element => (
+type BuildControlsProps = {
+  ingredientAdded: (type: keyof Ingredients) => void;
+};
+
+const BuildControls: FunctionComponent<BuildControlsProps> = (props): JSX.Element => (
   <BuildControlsContainer>
     {controls.map(ctrl => (
-      <BuildControl key={ctrl.label} label={ctrl.label} />
+      <BuildControl key={ctrl.label} label={ctrl.label} added={props.ingredientAdded} type={ctrl.type} />
     ))}
   </BuildControlsContainer>
 );
