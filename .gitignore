@@ -9,7 +9,7 @@
 /coverage
 
 # linter
-# .eslintcache
+.eslintcache
 
 # production
 /build
