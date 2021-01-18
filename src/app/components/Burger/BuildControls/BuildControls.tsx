@@ -1,8 +1,7 @@
 import { FunctionComponent } from 'react';
-
 import BuildControl from './BuildControl/BuildControl';
-import classes from './BuildControls.module.css';
 import Ingredients from '../../../model/Ingredients';
+import { BuildControlsContainer } from './BuildControls.styles';
 
 type ControlType = {
   type: keyof Ingredients;
@@ -17,11 +16,11 @@ const controls: ControlType[] = [
 ];
 
 const BuildControls: FunctionComponent = (): JSX.Element => (
-  <div className={classes.BuildControls}>
+  <BuildControlsContainer>
     {controls.map(ctrl => (
       <BuildControl key={ctrl.label} label={ctrl.label} />
     ))}
-  </div>
+  </BuildControlsContainer>
 );
 
 export default BuildControls;

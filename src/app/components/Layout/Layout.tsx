@@ -1,11 +1,10 @@
 import React, { FunctionComponent } from 'react';
-
-import classes from './Layout.module.css';
+import { LayoutContainer } from './Layout.styles';
 
 const Layout: FunctionComponent = (props): JSX.Element => (
   <>
     <div>ToolsBar, SideDraw, Backdrop</div>
-    <main className={classes.Content}>{props.children}</main>
+    <LayoutContainer>{props.children}</LayoutContainer>
   </>
 );
 

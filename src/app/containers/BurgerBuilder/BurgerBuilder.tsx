@@ -19,7 +19,7 @@ class BurgerBuilder extends Component {
     },
   };
 
-  render() {
+  render(): JSX.Element {
     return (
       <>
         <Burger ingredients={this.state.ingredients} />

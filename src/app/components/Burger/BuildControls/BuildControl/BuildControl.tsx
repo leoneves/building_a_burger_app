@@ -1,6 +1,5 @@
 import { FunctionComponent } from 'react';
-
-import classes from './BuildControl.module.css';
+import { BuildControlContainer, BuildControlLabel, ControlLess, ControlMore } from './BuildControl.styles';
 
 type BuildControlProps = {
   label: string;
@@ -11,11 +10,11 @@ const defaultProps: BuildControlProps = {
 };
 
 const BuildControl: FunctionComponent<BuildControlProps> = (props = defaultProps): JSX.Element => (
-  <div className={classes.BuildControl}>
-    <div className={classes.Label}>{props.label}</div>
-    <button className={classes.Less}>Less</button>
-    <button className={classes.More}>More</button>
-  </div>
+  <BuildControlContainer>
+    <BuildControlLabel>{props.label}</BuildControlLabel>
+    <ControlLess>Less</ControlLess>
+    <ControlMore>More</ControlMore>
+  </BuildControlContainer>
 );
 
 export default BuildControl;

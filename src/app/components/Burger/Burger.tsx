@@ -1,8 +1,7 @@
 import { FunctionComponent, PropsWithChildren } from 'react';
 import BurgerIngredient from './BurgerIngredient/BurgerIngredient';
 import Ingredients from '../../model/Ingredients';
-
-import classes from './Burger.module.css';
+import { BurgerContainer } from './Burger.styles';
 
 type BurgerIngredientsProps = {
   ingredients: Ingredients;
@@ -21,13 +20,13 @@ const Burger: FunctionComponent<BurgerIngredientsProps> = (props: PropsWithChild
     }, []);
   if (transformedIngredient.length === 2) {
     return (
-      <div className={classes.Burger}>
+      <BurgerContainer>
         {transformedIngredient}
         <p>Please start adding ingredients</p>
-      </div>
+      </BurgerContainer>
     );
   }
-  return <div className={classes.Burger}>{transformedIngredient}</div>;
+  return <BurgerContainer>{transformedIngredient}</BurgerContainer>;
 };
 
 export default Burger;
