@@ -22,7 +22,7 @@ type BuildControlsProps = {
 const BuildControls: FunctionComponent<BuildControlsProps> = (props): JSX.Element => (
   <BuildControlsContainer>
     {controls.map(ctrl => (
-      <BuildControl key={ctrl.label} label={ctrl.label} added={props.ingredientAdded} type={ctrl.type} />
+      <BuildControl key={ctrl.label} label={ctrl.label} add={() => props.ingredientAdded(ctrl.type)} />
     ))}
   </BuildControlsContainer>
 );
