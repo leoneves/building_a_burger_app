@@ -1,5 +1,5 @@
 import { FunctionComponent, PropsWithChildren } from 'react';
-import Ingredients from '../../../model/Ingredients';
+import Ingredients from 'app/model/Ingredients';
 import { BreadBottom, BreadTop, Seeds1, Seeds2, Meat, Bacon, Cheese, Salad } from './BurgerIngredient.styles';
 
 type BurgerIngredientProps = {

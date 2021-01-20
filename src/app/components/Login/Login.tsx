@@ -1,10 +1,10 @@
 import React, { FunctionComponent, useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { login } from '../../redux/user/auth';
+import { login } from 'app/redux/user/auth';
 import { ContainerLogin } from './Login.styles';
-import { LoginAction, LoginFailAction } from '../../redux/user/Actions';
+import { LoginAction, LoginFailAction } from 'app/redux/user/Actions';
 import { ThunkDispatch } from 'redux-thunk';
-import RootState from '../../redux/RootState';
+import RootState from 'app/redux/RootState';
 
 const Login: FunctionComponent = (): JSX.Element => {
   const usernameLogin = useRef<HTMLInputElement>(null);

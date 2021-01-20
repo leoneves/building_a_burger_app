@@ -16,6 +16,11 @@
     "plugin:prettier/recommended"
   ],
   "plugins": ["react", "@typescript-eslint", "jest"],
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
+  },
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true

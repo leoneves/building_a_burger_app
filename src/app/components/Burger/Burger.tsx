@@ -1,6 +1,6 @@
 import { FunctionComponent, PropsWithChildren } from 'react';
-import BurgerIngredient from './BurgerIngredient/BurgerIngredient';
-import Ingredients from '../../model/Ingredients';
+import BurgerIngredient from 'app/components/Burger/BurgerIngredient/BurgerIngredient';
+import Ingredients from 'app/model/Ingredients';
 import { BurgerContainer } from './Burger.styles';
 
 type BurgerIngredientsProps = {

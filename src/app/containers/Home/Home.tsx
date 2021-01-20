@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import { connect } from 'react-redux';
-import RootState from '../../redux/RootState';
-import UserState from '../../redux/user/UserState';
+import RootState from 'app/redux/RootState';
+import UserState from 'app/redux/user/UserState';
 
 class Home extends Component<HomeProps> {
   render() {

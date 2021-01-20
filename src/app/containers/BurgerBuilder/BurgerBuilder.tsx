@@ -1,7 +1,7 @@
 import { Component } from 'react';
-import Burger from '../../components/Burger/Burger';
-import Ingredients from '../../model/Ingredients';
-import BuildControls from '../../components/Burger/BuildControls/BuildControls';
+import Burger from 'app/components/Burger/Burger';
+import Ingredients from 'app/model/Ingredients';
+import BuildControls from 'app/components/Burger/BuildControls/BuildControls';
 
 type BurgerState = {
   ingredients: Ingredients;

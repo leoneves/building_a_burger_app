@@ -1,4 +1,4 @@
-import UserState from './user/UserState';
+import UserState from 'app/redux/user/UserState';
 
 interface RootState {
   user: UserState;

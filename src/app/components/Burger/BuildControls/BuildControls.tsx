@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react';
-import BuildControl from './BuildControl/BuildControl';
-import Ingredients from '../../../model/Ingredients';
+import BuildControl from 'app/components/Burger/BuildControls/BuildControl/BuildControl';
+import Ingredients from 'app/model/Ingredients';
 import { BuildControlsContainer } from './BuildControls.styles';
 
 type ControlType = {

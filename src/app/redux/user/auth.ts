@@ -2,8 +2,8 @@ import UserState from './UserState';
 import { ActionType, LoginAction, LoginSuccessAction, LoginFailAction } from './Actions';
 import { ThunkAction } from 'redux-thunk';
 import RootState from '../RootState';
-import Client from '../../client/client';
-import history from '../../history';
+import Client from 'app/client/client';
+import history from 'app/history';
 
 const initialState: UserState = {
   email: '',
